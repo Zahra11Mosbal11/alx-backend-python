@@ -47,8 +47,9 @@ class TestGetJson(unittest.TestCase):
 class TestMemoize(unittest.TestCase):
     """Parameterize and patch"""
     def test_memoize(self):
+        """Tests the function when calling a_property twice"""
         class TestClass:
-
+            """Test Class for wrapping with memoize """
             def a_method(self):
                 return 42
 
